@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation: React.FC = () => {
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -49,6 +51,16 @@ const Navigation: React.FC = () => {
             }`}
           >
             Services
+          </button>
+          <button
+            onClick={() => navigate("/donate")}
+            className={`font-medium transition-colors ${
+              scrolled
+                ? "text-gray-700 hover:text-green-700"
+                : "text-white hover:text-yellow-400"
+            }`}
+          >
+            Donate
           </button>
           <button
             onClick={() => scrollToSection("contact")}
