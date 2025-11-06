@@ -52,7 +52,7 @@ const About: React.FC = () => {
           <div className='relative'>
             <div className='aspect-square rounded-lg overflow-hidden shadow-2xl w-3/4'>
               <img
-                src='../public/jessica_1.jpg'
+                src='/jessica_1.jpg'
                 alt='Community support'
                 className='w-full h-full object-cover'
               />
